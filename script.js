@@ -16,6 +16,11 @@ function getComputerChoice() {
   }
 }
 
-console.log(getComputerChoice());
-console.log(getComputerChoice());
-console.log(getComputerChoice());
+// getHumanChoice
+// 1. Ask the player to type rock, paper, or scissors
+// 2. Return what the player typed
+
+function getHumanChoice() {
+  return prompt("Enter rock, paper, or scissors:");
+}
+
