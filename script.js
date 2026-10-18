@@ -1,9 +1,3 @@
-// getComputerChoice
-// 1. Get a random number between 0 and 1
-// 2. If it is less than 1/3, return "rock"
-// 3. If it is less than 2/3, return "paper"
-// 4. Otherwise, return "scissors"
-
 function getComputerChoice() {
     const randomNumber = Math.random();
 
@@ -16,24 +10,15 @@ function getComputerChoice() {
     }
 }
 
-// getHumanChoice
-// 1. Ask the player to type rock, paper, or scissors
-// 2. Return what the player typed
-
 function getHumanChoice() {
     return prompt("Enter rock, paper, or scissors:");
 }
-
-// playGame
-// 1. Set humanScore and computerScore to 0
-// 2. Define playRound inside playGame so it can update the scores
-// 3. Play 5 rounds, getting new choices from both players each round
-// 4. After 5 rounds, compare the scores and log the overall winner
 
 function playGame() {
     let humanScore = 0;
     let computerScore = 0;
 
+    // Defined inside playGame so it can update the scores above
     function playRound(humanChoice, computerChoice) {
         humanChoice = humanChoice.toLowerCase();
 
